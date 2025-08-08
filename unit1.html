@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprèn Català - Unitat 1</title>
+    <meta name="description" content="Unitat 1 interactiva per aprendre català: vocabulari, verbs, diàlegs, i més.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="URL_REAL_DEL_SITIO/unit1.html">
+    <meta property="og:title" content="Aprèn Català - Unitat 1">
+    <meta property="og:description" content="Unitat 1 interactiva per aprendre català.">
+    <meta property="og:image" content="URL_DE_IMAGEN_PARA_COMPARTIR">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-700">Aprèn Català!</h1>
+            <p class="mt-2 text-lg text-stone-600">El teu professor personal de català</p>
+        </header>
+
+        <nav class="flex flex-wrap justify-center gap-2 mb-8">
+            <a href="index.html" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Inici</a>
+            <button data-target="vocab" class="nav-button active bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Vocabulari</button>
+            <button data-target="verbs" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Verbs</button>
+            <button data-target="dialogues" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Diàlegs</button>
+            <button data-target="match" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Relaciona</button>
+            <button data-target="create" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Presentació</button>
+        </nav>
+
+        <main>
+            <section id="vocab" class="section-content active">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4 text-center">Unitat 1: Vocabulari Essencial</h2>
+                <p class="text-center text-stone-600 mb-6">Familiaritza't amb aquestes paraules i expressions clau de la Unitat 1. Fes clic a cada paraula per veure'n la traducció.</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full">
+                        <p class="font-semibold text-lg">Hola</p>
+                        <p class="translation text-stone-500 hidden">Hello</p>
+                    </button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full">
+                        <p class="font-semibold text-lg">Adeu</p>
+                        <p class="translation text-stone-500 hidden">Goodbye</p>
+                    </button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full">
+                        <p class="font-semibold text-lg">Com?</p>
+                        <p class="translation text-stone-500 hidden">How? / What?</p>
+                    </button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full">
+                        <p class="font-semibold text-lg">Qui?</p>
+                        <p class="translation text-stone-500 hidden">Who?</p>
+                    </button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full">
+                        <p class="font-semibold text-lg">On?</p>
+                        <p class="translation text-stone-500 hidden">Where?</p>
+                    </button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full">
+                        <p class="font-semibold text-lg">Quants?</p>
+                        <p class="translation text-stone-500 hidden">How many?</p>
+                    </button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full">
+                        <p class="font-semibold text-lg">Gràcies</p>
+                        <p class="translation text-stone-500 hidden">Thank you</p>
+                    </button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full">
+                        <p class="font-semibold text-lg">De res</p>
+                        <p class="translation text-stone-500 hidden">You're welcome</p>
+                    </button>
+                </div>
+                <div class="mt-6 text-center">
+                    <button id="reset-vocab-u1" class="btn btn-secondary">Reinicia Vocabulari</button>
+                </div>
+            </section>
+
+            <section id="verbs" class="section-content">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4 text-center">Unitat 1: Explorador de Verbs</h2>
+                <p class="text-center text-stone-600 mb-6">Selecciona un verb i un pronom per veure la conjugació correcta en present.</p>
+                <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                        <div class="flex-1">
+                            <label for="verb-select" class="block text-sm font-medium text-stone-700">Verb</label>
+                            <select id="verb-select" class="mt-1 block w-full py-2 px-3 border border-stone-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500">
+                                <option value="ser">ser</option>
+                                <option value="dir-se">dir-se</option>
+                                <option value="viure">viure</option>
+                            </select>
+                        </div>
+                        <div class="flex-1">
+                            <label for="pronoun-select" class="block text-sm font-medium text-stone-700">Pronom</label>
+                            <select id="pronoun-select" class="mt-1 block w-full py-2 px-3 border border-stone-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500">
+                                <option value="0">Jo</option>
+                                <option value="1">Tu</option>
+                                <option value="2">Ell/Ella/Vostè</option>
+                                <option value="3">Nosaltres</option>
+                                <option value="4">Vosaltres</option>
+                                <option value="5">Ells/Elles/Vostès</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="conjugation-result" class="mt-4 text-center bg-teal-50 p-4 rounded-lg">
+                        <p class="text-lg"><span id="pronoun-text" class="font-bold">Jo</span> <span id="verb-result" class="font-bold text-teal-700">soc</span></p>
+                    </div>
+                    <button id="reset-verbs-u1" class="btn btn-secondary w-full mt-4">Reinicia</button>
+                </div>
+            </section>
+
+            <section id="dialogues" class="section-content">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4 text-center">Unitat 1: Practica amb Diàlegs</h2>
+                <p class="text-center text-stone-600 mb-6">Completa els espais en blanc i comprova les teves respostes. Rebràs un consell si t'equivoques!</p>
+                <div class="max-w-2xl mx-auto space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="font-semibold text-lg mb-2">Diàleg 1</h3>
+                        <p class="mb-2"><strong>A:</strong> Hola, <input type="text" id="d1q1" class="border-b-2 border-stone-300 focus:border-teal-500 outline-none w-20 mx-1"> et dius?</p>
+                        <div id="d1q1-tip" class="error-tip hidden"></div>
+                        <p class="mb-2"><strong>B:</strong> Em dic Marc.</p>
+                        <p class="mb-2"><strong>A:</strong> <input type="text" id="d1q2" class="border-b-2 border-stone-300 focus:border-teal-500 outline-none w-20 mx-1"> anys tens?</p>
+                        <div id="d1q2-tip" class="error-tip hidden"></div>
+                        <p class="mb-2"><strong>B:</strong> <input type="text" id="d1q3" class="border-b-2 border-stone-300 focus:border-teal-500 outline-none w-20 mx-1"> vint-i-dos anys.</p>
+                        <div id="d1q3-tip" class="error-tip hidden"></div>
+                        <p class="mb-2"><strong>A:</strong> I d'<input type="text" id="d1q4" class="border-b-2 border-stone-300 focus:border-teal-500 outline-none w-12 mx-1"> ets?</p>
+                        <div id="d1q4-tip" class="error-tip hidden"></div>
+                        <p class="mb-2"><strong>B:</strong> <input type="text" id="d1q5" class="border-b-2 border-stone-300 focus:border-teal-500 outline-none w-20 mx-1"> de Vic.</p>
+                        <div id="d1q5-tip" class="error-tip hidden"></div>
+                        <div class="mt-4 flex gap-2">
+                            <button id="check-dialogue-1-btn" class="btn btn-primary">Comprova</button>
+                            <button id="reset-dialogue-u1" class="btn btn-secondary">Reinicia</button>
+                        </div>
+                        <div id="feedback-d1" class="mt-2"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="match" class="section-content">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4 text-center">Unitat 1: Relaciona Preguntes i Respostes</h2>
+                <p class="text-center text-stone-600 mb-6">Fes clic en una pregunta i després en la seva resposta corresponent. Si t'equivoques, rebràs una pista!</p>
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div id="questions-col">
+                            <h3 class="font-semibold text-lg mb-2 text-center">Preguntes</h3>
+                        </div>
+                        <div id="answers-col">
+                            <h3 class="font-semibold text-lg mb-2 text-center">Respostes</h3>
+                        </div>
+                    </div>
+                    <div id="match-feedback" class="text-center mt-4 font-bold"></div>
+                    <button id="reset-match-u1" class="btn btn-secondary w-full mt-4">Reinicia</button>
+                </div>
+            </section>
+
+            <section id="create" class="section-content">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4 text-center">Unitat 1: Crea la teva Presentació</h2>
+                <p class="text-center text-stone-600 mb-6">Introdueix les teves dades per generar la teva presentació personal en català.</p>
+                <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="name-input" class="block text-sm font-medium text-stone-700">Nom</label>
+                            <input type="text" id="name-input" class="mt-1 block w-full p-2 border border-stone-300 rounded-md shadow-sm">
+                            <div id="name-tip" class="error-tip hidden"></div>
+                        </div>
+                        <div>
+                            <label for="age-input" class="block text-sm font-medium text-stone-700">Edat</label>
+                            <input type="number" id="age-input" class="mt-1 block w-full p-2 border border-stone-300 rounded-md shadow-sm">
+                            <div id="age-tip" class="error-tip hidden"></div>
+                        </div>
+                        <div>
+                            <label for="profession-input" class="block text-sm font-medium text-stone-700">Professió</label>
+                            <input type="text" id="profession-input" class="mt-1 block w-full p-2 border border-stone-300 rounded-md shadow-sm">
+                            <div id="profession-tip" class="error-tip hidden"></div>
+                        </div>
+                        <div>
+                            <label for="city-input" class="block text-sm font-medium text-stone-700">Ciutat on vius</label>
+                            <input type="text" id="city-input" class="mt-1 block w-full p-2 border border-stone-300 rounded-md shadow-sm">
+                            <div id="city-tip" class="error-tip hidden"></div>
+                        </div>
+                        <div class="sm:col-span-2">
+                             <label for="origin-input" class="block text-sm font-medium text-stone-700">Lloc d'origen</label>
+                            <input type="text" id="origin-input" class="mt-1 block w-full p-2 border border-stone-300 rounded-md shadow-sm">
+                            <div id="origin-tip" class="error-tip hidden"></div>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-col gap-2">
+                        <button id="generate-btn" class="btn btn-primary w-full">Genera la presentació</button>
+                        <button id="reset-create-u1" class="btn btn-secondary w-full">Reinicia</button>
+                    </div>
+                    <div id="presentation-output" class="mt-6 bg-stone-100 p-4 rounded-lg border border-stone-200 hidden">
+                        <h4 class="font-bold text-lg mb-2">La teva presentació:</h4>
+                        <p id="presentation-text"></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprèn Català - Inici</title>
+    <meta name="description" content="Pàgina principal per aprendre català. Selecciona la teva unitat d'estudi.">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="URL_REAL_DEL_SITIO/index.html">
+    <meta property="og:title" content="Aprèn Català - Inici">
+    <meta property="og:description" content="La teva aventura per aprendre català comença aquí.">
+    <meta property="og:image" content="URL_DE_IMAGEN_PARA_COMPARTIR">
+
+    <!-- Tailwind y Fuentes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-700">Aprèn Català!</h1>
+            <p class="mt-2 text-lg text-stone-600">El teu professor personal de català</p>
+        </header>
+
+        <nav class="flex flex-wrap justify-center gap-2 mb-8">
+            <a href="index.html" class="nav-button active bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Inici</a>
+            <a href="unit1.html" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Unitat 1</a>
+            <a href="unit2.html" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Unitat 2</a>
+        </nav>
+
+        <main>
+            <section id="home" class="section-content active">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4 text-center">Benvinguts a la teva aventura amb el català!</h2>
+                <p class="text-center text-stone-600 mb-6">Aquí trobaràs recursos i exercicis per aprendre català de forma interactiva i divertida. Comencem!</p>
+
+                <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow space-y-4">
+                    <h3 class="font-semibold text-xl text-teal-700">Sabies que...?</h3>
+                    <ul class="list-disc list-inside text-stone-700 space-y-2">
+                        <li>El català és una llengua romànica parlada per més de 10 milions de persones.</li>
+                        <li>És la llengua oficial a Catalunya, la Comunitat Valenciana (on es coneix com a valencià) i les Illes Balears.</li>
+                        <li>També es parla a Andorra, la Franja de Ponent (Aragó), el Carxe (Múrcia), la ciutat de l'Alguer (Sardenya) i la Catalunya Nord (França).</li>
+                    </ul>
+                    <h3 class="font-semibold text-xl text-teal-700 mt-6">Consells per aprendre català:</h3>
+                    <ul class="list-disc list-inside text-stone-700 space-y-2">
+                        <li><strong>Immersió:</strong> Intenta escoltar música, veure pel·lícules o sèries en català.</li>
+                        <li><strong>Pràctica:</strong> Parla sempre que puguis, encara que sigui poc. No tinguis por d'equivocar-te!</li>
+                        <li><strong>Context:</strong> Aprèn vocabulari i gramàtica en frases completes i situacions reals.</li>
+                        <li><strong>Constància:</strong> Dedica una mica de temps cada dia a l'aprenentatge.</li>
+                    </ul>
+                    <h3 class="font-semibold text-xl text-teal-700 mt-6">Tria la teva unitat d'estudi:</h3>
+                    <p class="text-stone-700">Utilitza el menú de navegació de dalt per seleccionar la unitat que vols estudiar o practicar.</p>
+                    <div class="flex justify-center gap-4 mt-6">
+                        <a href="unit1.html" class="bg-teal-600 text-white py-3 px-6 rounded-full shadow-lg hover:bg-teal-700 text-lg font-semibold">Anar a Unitat 1</a>
+                        <a href="unit2.html" class="bg-teal-600 text-white py-3 px-6 rounded-full shadow-lg hover:bg-teal-700 text-lg font-semibold">Anar a Unitat 2</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

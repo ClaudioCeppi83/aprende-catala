@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprèn Català - Unitat 2</title>
+    <meta name="description" content="Unitat 2 interactiva per aprendre català: la família, descripcions, verbs i més.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="URL_REAL_DEL_SITIO/unit2.html">
+    <meta property="og:title" content="Aprèn Català - Unitat 2">
+    <meta property="og:description" content="Unitat 2 interactiva per aprendre català sobre la família.">
+    <meta property="og:image" content="URL_DE_IMAGEN_PARA_COMPARTIR">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-700">Aprèn Català!</h1>
+            <p class="mt-2 text-lg text-stone-600">El teu professor personal de català</p>
+        </header>
+
+        <nav class="flex flex-wrap justify-center gap-2 mb-8">
+            <a href="index.html" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Inici</a>
+            <button data-target="vocab2" class="nav-button active bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Vocabulari</button>
+            <button data-target="verbs2" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Verbs</button>
+            <button data-target="dialogues2" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Diàlegs</button>
+            <button data-target="match2" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Relaciona</button>
+            <button data-target="create2" class="nav-button bg-white text-teal-700 py-2 px-4 rounded-full shadow-md font-semibold">Descriu</button>
+        </nav>
+
+        <main>
+            <section id="vocab2" class="section-content active">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4 text-center">Unitat 2: Vocabulari de la Família</h2>
+                <p class="text-center text-stone-600 mb-6">Aprèn els membres de la família i adjectius per descriure persones.</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Pare</p><p class="translation text-stone-500 hidden">Padre</p></button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Mare</p><p class="translation text-stone-500 hidden">Madre</p></button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Fill / Filla</p><p class="translation text-stone-500 hidden">Hijo / Hija</p></button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Germà / Germana</p><p class="translation text-stone-500 hidden">Hermano / Hermana</p></button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Avi / Àvia</p><p class="translation text-stone-500 hidden">Abuelo / Abuela</p></button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Oncle / Tia</p><p class="translation text-stone-500 hidden">Tío / Tía</p></button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Cosí / Cosina</p><p class="translation text-stone-500 hidden">Primo / Prima</p></button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Alt / Alta</p><p class="translation text-stone-500 hidden">Alto / Alta</p></button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Baix / Baixa</p><p class="translation text-stone-500 hidden">Bajo / Baja</p></button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Gras / Grassa</p><p class="translation text-stone-500 hidden">Gordo / Gorda</p></button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Prim / Prima</p><p class="translation text-stone-500 hidden">Delgado / Delgada</p></button>
+                    <button class="vocab-card interactive-card bg-white p-4 rounded-lg shadow cursor-pointer text-center w-full"><p class="font-semibold text-lg">Jove</p><p class="translation text-stone-500 hidden">Joven</p></button>
+                </div>
+                <div class="mt-6 text-center">
+                    <button id="reset-vocab-u2" class="btn btn-secondary">Reinicia Vocabulari</button>
+                </div>
+            </section>
+
+            <section id="verbs2" class="section-content">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4 text-center">Unitat 2: Explorador de Verbs</h2>
+                <p class="text-center text-stone-600 mb-6">Practica les conjugacions dels verbs clau per descriure la família.</p>
+                <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                        <div class="flex-1">
+                            <label for="verb-select2" class="block text-sm font-medium text-stone-700">Verb</label>
+                            <select id="verb-select2" class="mt-1 block w-full py-2 px-3 border border-stone-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500">
+                                <option value="tenir">tenir</option>
+                                <option value="ser">ser</option>
+                                <option value="portar">portar</option>
+                            </select>
+                        </div>
+                        <div class="flex-1">
+                            <label for="pronoun-select2" class="block text-sm font-medium text-stone-700">Pronom</label>
+                            <select id="pronoun-select2" class="mt-1 block w-full py-2 px-3 border border-stone-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500">
+                                <option value="0">Jo</option>
+                                <option value="1">Tu</option>
+                                <option value="2">Ell/Ella/Vostè</option>
+                                <option value="3">Nosaltres</option>
+                                <option value="4">Vosaltres</option>
+                                <option value="5">Ells/Elles/Vostès</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="conjugation-result2" class="mt-4 text-center bg-teal-50 p-4 rounded-lg">
+                        <p class="text-lg"><span id="pronoun-text2" class="font-bold">Jo</span> <span id="verb-result2" class="font-bold text-teal-700">tinc</span></p>
+                    </div>
+                    <button id="reset-verbs-u2" class="btn btn-secondary w-full mt-4">Reinicia</button>
+                </div>
+            </section>
+
+            <section id="dialogues2" class="section-content">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4 text-center">Unitat 2: Practica amb Diàlegs</h2>
+                <p class="text-center text-stone-600 mb-6">Completa la conversa sobre la família.</p>
+                <div class="max-w-2xl mx-auto space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="font-semibold text-lg mb-2">Diàleg 2</h3>
+                        <p class="mb-2"><strong>A:</strong> Hola, Anna! Aquesta és la meva germana.</p>
+                        <p class="mb-2"><strong>B:</strong> Hola! Com <input type="text" id="d2q1" class="border-b-2 border-stone-300 focus:border-teal-500 outline-none w-20 mx-1"> diu?</p>
+                        <p class="mb-2"><strong>A:</strong> Es <input type="text" id="d2q2" class="border-b-2 border-stone-300 focus:border-teal-500 outline-none w-20 mx-1"> Laura.</p>
+                        <p class="mb-2"><strong>B:</strong> I quants anys <input type="text" id="d2q3" class="border-b-2 border-stone-300 focus:border-teal-500 outline-none w-12 mx-1">?</p>
+                        <p class="mb-2"><strong>A:</strong> <input type="text" id="d2q4" class="border-b-2 border-stone-300 focus:border-teal-500 outline-none w-12 mx-1"> 25 anys.</p>
+                        <p class="mb-2"><strong>B:</strong> I com és?</p>
+                        <p class="mb-2"><strong>A:</strong> <input type="text" id="d2q5" class="border-b-2 border-stone-300 focus:border-teal-500 outline-none w-20 mx-1"> alta i rossa.</p>
+                        <div class="mt-4 flex gap-2">
+                            <button id="check-dialogue-2-btn" class="btn btn-primary">Comprova</button>
+                            <button id="reset-dialogue-u2" class="btn btn-secondary">Reinicia</button>
+                        </div>
+                        <div id="feedback-d2" class="mt-2"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="match2" class="section-content">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4 text-center">Unitat 2: Relaciona Parentius</h2>
+                <p class="text-center text-stone-600 mb-6">Relaciona cada persona amb el seu parentiu correcte.</p>
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div id="questions-col2">
+                            <h3 class="font-semibold text-lg mb-2 text-center">Persona</h3>
+                        </div>
+                        <div id="answers-col2">
+                            <h3 class="font-semibold text-lg mb-2 text-center">Parentiu</h3>
+                        </div>
+                    </div>
+                    <div id="match-feedback2" class="text-center mt-4 font-bold"></div>
+                    <button id="reset-match-u2" class="btn btn-secondary w-full mt-4">Reinicia</button>
+                </div>
+            </section>
+
+            <section id="create2" class="section-content">
+                <h2 class="text-2xl font-bold text-teal-600 mb-4 text-center">Unitat 2: Descriu un Familiar</h2>
+                <p class="text-center text-stone-600 mb-6">Introdueix les dades per generar la descripció d'un membre de la teva família.</p>
+                <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="fam-name-input" class="block text-sm font-medium text-stone-700">Nom</label>
+                            <input type="text" id="fam-name-input" class="mt-1 block w-full p-2 border border-stone-300 rounded-md shadow-sm">
+                        </div>
+                        <div>
+                            <label for="fam-relation-input" class="block text-sm font-medium text-stone-700">Parentiu (pare, germana...)</label>
+                            <input type="text" id="fam-relation-input" class="mt-1 block w-full p-2 border border-stone-300 rounded-md shadow-sm">
+                        </div>
+                        <div>
+                            <label for="fam-age-input" class="block text-sm font-medium text-stone-700">Edat</label>
+                            <input type="number" id="fam-age-input" class="mt-1 block w-full p-2 border border-stone-300 rounded-md shadow-sm">
+                        </div>
+                        <div>
+                            <label for="fam-hair-input" class="block text-sm font-medium text-stone-700">Color de cabell</label>
+                            <input type="text" id="fam-hair-input" class="mt-1 block w-full p-2 border border-stone-300 rounded-md shadow-sm">
+                        </div>
+                        <div class="sm:col-span-2">
+                             <label for="fam-adj-input" class="block text-sm font-medium text-stone-700">Un adjectiu (alt, simpàtic...)</label>
+                            <input type="text" id="fam-adj-input" class="mt-1 block w-full p-2 border border-stone-300 rounded-md shadow-sm">
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-col gap-2">
+                        <button id="generate-description-btn" class="btn btn-primary w-full">Genera la descripció</button>
+                        <button id="reset-description-u2" class="btn btn-secondary w-full">Reinicia</button>
+                    </div>
+                    <div id="description-output" class="mt-6 bg-stone-100 p-4 rounded-lg border border-stone-200 hidden">
+                        <h4 class="font-bold text-lg mb-2">La teva descripció:</h4>
+                        <p id="description-text"></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
